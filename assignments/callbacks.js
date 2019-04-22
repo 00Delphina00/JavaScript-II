@@ -23,28 +23,55 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   });
 
 */
-
+// IT LOOKS LIKE THERE'S AN ERROR ON LINE 21 OF THE POSSIBLE SOLUTION.  IT DOESN'T LOOK RIGHT.
+//   function function-name(input, cb){
+//       return cb(input)             /*cb as placeholder name*/
+//   }
+//   function-name(input, callback function name no parenthesis);
 
 function getLength(arr, cb) {
+    let length = arr.length;  
+    return length;
   // getLength passes the length of the array into the callback.
-}
+   }
+getLength(items);
+
+
+console.log(getLength(items));
 
 function last(arr, cb) {
+  let lastIndex = arr.length -1;
+  return arr[lastIndex];
   // last passes the last item of the array into the callback.
 }
+last(items);
+console.log(last(items));
 
 function sumNums(x, y, cb) {
+  let sum = x + y;
+  return sum;
   // sumNums adds two numbers (x, y) and passes the result to the callback.
 }
+console.log(sumNums(2,4));
 
 function multiplyNums(x, y, cb) {
+  let product = x*y;
+  return product;
   // multiplyNums multiplies two numbers and passes the result to the callback.
 }
+console.log(multiplyNums(2,4));
 
 function contains(item, list, cb) {
+       cb(list);
+       if (list === item){
+         return true;
+       } else {return false;}
+   }
+   contains('Pencil', items, forEach();
+
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-}
+
 
 /* STRETCH PROBLEM */
 
