@@ -29,16 +29,16 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 //   }
 //   function-name(input, callback function name no parenthesis);
 
-function getLength(arr, cb) {
-    let length = arr.length;  
-    return length;
-  // getLength passes the length of the array into the callback.
-   }
-getLength(items);
-
-
-console.log(getLength(items));
-
+ const displayLength = (length) => {
+     console.log(`Array Length Is ${length}`);
+  }
+function getLength(arr, callback) {
+  const length = arr.length;
+  callback(length);
+ // getLength passes the length of the array into the callback.
+  }
+  getLength(items,displayLength);
+/*
 function last(arr, cb) {
   let lastIndex = arr.length -1;
   return arr[lastIndex];
@@ -68,6 +68,7 @@ function contains(item, list, cb) {
        } else {return false;}
    }
    contains('Pencil', items, forEach();
+*/
 
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
