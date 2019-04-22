@@ -64,14 +64,17 @@ const displaySum = (sum) =>{
 }
 sumNums(1,2,displaySum);
 
-/*
-function multiplyNums(x, y, cb) {
+
+function multiplyNums(x, y, callback) {
   let product = x*y;
-  return product;
+  callback(product);
   // multiplyNums multiplies two numbers and passes the result to the callback.
 }
-console.log(multiplyNums(2,4));
-
+const displayProduct = (product)=>{
+  console.log(`The Product Is ${product}`);
+}
+multiplyNums(2,8,displayProduct);
+/*
 function contains(item, list, cb) {
        cb(list);
        if (list === item){
