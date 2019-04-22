@@ -38,15 +38,19 @@ function getLength(arr, callback) {
  // getLength passes the length of the array into the callback.
   }
   getLength(items,displayLength);
-/*
-function last(arr, cb) {
+
+
+  
+function last(arr, callback) {
   let lastIndex = arr.length -1;
-  return arr[lastIndex];
+  callback(arr[lastIndex]);
   // last passes the last item of the array into the callback.
 }
-last(items);
-console.log(last(items));
-
+ const displayLast = (lastItem)=>{
+  console.log(`The Last Item Is ${lastItem}`);
+}
+last(items,displayLast);
+/*
 function sumNums(x, y, cb) {
   let sum = x + y;
   return sum;
