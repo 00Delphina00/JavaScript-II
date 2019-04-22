@@ -23,11 +23,14 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   });
 
 */
-// IT LOOKS LIKE THERE'S AN ERROR ON LINE 21 OF THE POSSIBLE SOLUTION.  IT DOESN'T LOOK RIGHT.
-//   function function-name(input, cb){
-//       return cb(input)             /*cb as placeholder name*/
-//   }
-//   function-name(input, callback function name no parenthesis);
+// function  function1Name(parameter1, parameter2, callback){
+// variable stores a value from the argument and/or
+// callback(value);     passes the value into the other function that's entered as an argument
+// }
+// const  function2Name = (input) =>{
+// run this code on (input)
+// }
+// function1Name(argument 1, argument2, callback);   enters the values and pushes it into callback
 
  const displayLength = (length) => {
      console.log(`Array Length Is ${length}`);
@@ -50,14 +53,18 @@ function last(arr, callback) {
   console.log(`The Last Item Is ${lastItem}`);
 }
 last(items,displayLast);
-/*
-function sumNums(x, y, cb) {
+
+function sumNums(x, y, callback) {
   let sum = x + y;
-  return sum;
+  callback(sum);
   // sumNums adds two numbers (x, y) and passes the result to the callback.
 }
-console.log(sumNums(2,4));
+const displaySum = (sum) =>{
+  console.log(`The Sum Is ${sum}`);
+}
+sumNums(1,2,displaySum);
 
+/*
 function multiplyNums(x, y, cb) {
   let product = x*y;
   return product;
