@@ -74,16 +74,25 @@ const displayProduct = (product)=>{
   console.log(`The Product Is ${product}`);
 }
 multiplyNums(2,8,displayProduct);
-/*
-function contains(item, list, cb) {
-       cb(list);
-       if (list === item){
-         return true;
-       } else {return false;}
-   }
-   contains('Pencil', items, forEach();
-*/
 
+
+
+function contains(item, list, callback) {
+    for (i=0; i<list.length; i++){   
+       if (list[i] === item){
+         callback (true, i);
+       } else {callback(false, i);}
+   }
+}  
+const displayContainerResult = (boolean, index)=>{
+     if (boolean === true){
+       console.log(`${boolean} The Item Is In The Array Index ${i}.`);
+     }else {
+       console.log(`${boolean} The Item Is Not In The Array Index ${i}.`);
+     }
+}
+
+contains('Pencil', items, displayContainerResult);
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
 
