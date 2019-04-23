@@ -91,12 +91,20 @@ let ticketPriceTotal = [];
     return donationTotal + donationAmount.donation;
   }, 0);
 
-console.log(ticketPriceTotal);
+console.log(`The Donations Total is $${ticketPriceTotal}`);
 
 // ==== Challenge 5: Be Creative ====
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
+//The 5k run support team needs to send push notifications to the runners who represent each company.  The want to periodic reminders and also notify them if any change needs to be made because of the weather.  Return the name and email address of all of the runners using .forEach() and push it into a new array.
+let contactList = [];
+
+const update = runners.forEach(function(i){
+    contactList.push("NAME:      "+i.first_name+i.last_name+"          EMAIL:     " +  i.email)    
+});
+console.log(contactList);
+
 
 // Problem 2
 
