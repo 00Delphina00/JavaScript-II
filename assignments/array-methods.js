@@ -68,7 +68,7 @@ console.log(fullName);
 let allCaps = [];
 
 allCaps = runners.map((person) => {
-    return person.first_name.toUpperCase();
+    return person.first_name.toUpperCase(); /*person is a placeholder name not a key*/
 }); 
 
 console.log(allCaps); 
@@ -105,7 +105,8 @@ const update = runners.forEach(function(i){
 });
 console.log(contactList);
 
-
 // Problem 2
+// The 5k run support team needs to identify runners with potentially life threatening health problems like bee sting allergies.  They want to add an extra key to the array called healthAlert.
+
 
 // Problem 3
