@@ -101,12 +101,18 @@ console.log(`The Donations Total is $${ticketPriceTotal}`);
 let contactList = [];
 
 const update = runners.forEach(function(i){
-    contactList.push("NAME:      "+i.first_name+i.last_name+"          EMAIL:     " +  i.email)    
+    contactList.push("NAME:      "+i.first_name+"  "+i.last_name+"          EMAIL:     " +  i.email)    
 });
 console.log(contactList);
 
 // Problem 2
 // The 5k run support team needs to identify runners with potentially life threatening health problems like bee sting allergies.  They want to add an extra key to the array called healthAlert.
-
+let health = {
+  "health_Alert": "UPDATE STATUS",
+};
+const healthStatus = runners.forEach(function(i){
+     Object.assign(i,health);
+});
+console.log(runners);
 
 // Problem 3
