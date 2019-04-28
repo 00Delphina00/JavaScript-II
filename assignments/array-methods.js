@@ -116,3 +116,4 @@ const healthStatus = runners.forEach(function(i){
 console.log(runners);
 
 // Problem 3
+// The 5K run support team wants to make a huge display showcasing all of the companies that are participating in the charity event. Create a new array that contains the names of all the companies and console.log it.
